@@ -21,9 +21,9 @@ html {
     margin-right: auto;
 }
 
-.header__burger {
+/* .header__burger {
     margin-left: 16px;
-}
+} */
 
 .header-checkstatus__logo {
     margin-right: 16px;
@@ -117,26 +117,33 @@ body {
     width: 100%;
 }
 
-/* hidden */
-.header__elem_hidden,
-.header__call, 
-.header__chat,
-.header__profile {
-    display: none;
-}
-
 .header-checkstatus__text,
 .header-repair__text {
     display: none;
 }
 
+.header__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #FF3E79;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call,
+.chat, 
+.profile {
+    display: none;
+}
 
 @media (min-width: 768px) {
 
 .header__elem_hidden,
-.header__call, 
-.header__chat,
-.header__profile {
+.call, 
+.chat,
+.profile {
     display: block;
 }
 
