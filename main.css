@@ -224,4 +224,8 @@ body {
         position: absolute;
         top: 42px;
     }
+
+    .header-checkstatus {
+        margin-right: 32px;
+    }
 }
