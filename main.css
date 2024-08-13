@@ -13,7 +13,12 @@ html {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    gap: 16px;
     /* padding-bottom: 10px; */
+}
+
+.header__logo {
+    margin-right: auto;
 }
 
 .header__burger {
@@ -26,7 +31,7 @@ html {
 
 body {
     margin: 0;
-    width: 320px;
+    /* width: 320px; */
     padding: 0px;
     font-family: "TT Lakes", sans-serif;
     background-color: #F8F8F8;
@@ -90,7 +95,7 @@ body {
     line-height: 24px;
     color: #1B1C21;
     margin-left: 8px;
-    font-weight: 500
+    font-weight: 500;
 }
 
 p {
@@ -100,10 +105,29 @@ p {
 }
 
 .img {
+    width: 100%;
+}
 
+/* hidden */
+.header__elem_hidden,
+.header__call, 
+.header__chat,
+.header__profile {
+    display: none;
 }
 
 
-@media (min-width: 992px) {
+
+@media (min-width: 768px) {
+
+.header__elem_hidden,
+.header__call, 
+.header__chat,
+.header__profile {
+    display: block;
+}
+
+
+
 
 }
