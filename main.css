@@ -98,10 +98,15 @@ body {
     font-weight: 500;
 }
 
-p {
-    font-size: 14px;
+.description {
     margin-left: 16px;
     margin-right: 20px;
+}
+
+.description-text__p1,
+.description-text__p2 {
+    font-size: 14px;
+    
 }
 
 .description-text__p2 {
@@ -145,14 +150,20 @@ p {
     display: none;
 }
 
-.img {
+.content__img {
     margin-right: 25px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .content {
     display: flex;
 }
+
+.description {
+    width: 85%;
+    margin-right: 48px;
+}
+
 }
 
 @media (min-width: 1120px) {
