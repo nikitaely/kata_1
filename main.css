@@ -25,7 +25,7 @@ html {
     margin-left: 16px;
 }
 
-.header__checkstatus {
+.header-checkstatus__logo {
     margin-right: 16px;
 }
 
@@ -81,7 +81,7 @@ body {
     text-decoration: none;
 }
 
-.more {
+.description-more {
     margin-left: 16px;
     width: 132;
     height: 24px;
@@ -90,7 +90,7 @@ body {
     margin-bottom: 10px;
 }
 
-.more_text {
+.description-more__text {
     font-size: 16px;
     line-height: 24px;
     color: #1B1C21;
@@ -104,11 +104,11 @@ p {
     margin-right: 20px;
 }
 
-.description__p2 {
+.description-text__p2 {
     display: none;
 }
 
-.img {
+.content__img {
     width: 100%;
 }
 
@@ -135,13 +135,13 @@ p {
     display: block;
 }
 
-.description__p2 {
+.description-text__p2 {
     display: inline-block;
 }
 
 .main-menu__element:nth-child(4), 
 .main-menu__element:nth-child(6),
-.text_add {
+.description-text__p2_hidden {
     display: none;
 }
 
@@ -172,7 +172,7 @@ p {
         display: block;
     }
 
-    .text_add {
+    .description-text__p2_hidden {
         display: inline;
     }
 
