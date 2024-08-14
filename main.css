@@ -70,7 +70,9 @@ body {
 }
 
 .main-menu__list {
-    margin-left: -24px;
+    padding-left: 0px;
+    margin-top: 7px;
+    margin-left: 16px;
     list-style-type: none;
     display: flex;
     overflow: scroll;
@@ -132,6 +134,11 @@ body {
 .description-text__p2 {
     font-size: 14px;
     line-height: 20px;
+    
+}
+
+.description-text__p1 {
+    margin-top: 0px;
 }
 
 .description-text__p2 {
