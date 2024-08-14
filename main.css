@@ -228,7 +228,7 @@ button {
     }
 
     .main-menu__list {
-        margin-left: -24px;
+        margin-left: 16px;
         list-style-type: none;
         display: flex;
         overflow: auto;
@@ -265,7 +265,15 @@ button {
         position: absolute;
         top: 23px;
     }
+    
+    .title__text {
+        margin-left: 28px;
+    }
 
+    .description {
+        margin-left: 32px;
+    }
+    
     .header-checkstatus,
     .header-repair {
         margin-right: 32px;
