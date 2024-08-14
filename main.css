@@ -21,12 +21,12 @@ html {
     margin-right: auto;
 }
 
-.header__burger {
-    margin-left: 16px;
+.header-checkstatus {
+    margin-right: 16px;
 }
 
-.header-checkstatus__logo {
-    margin-right: 16px;
+.burger {
+    margin-left: 16px;
 }
 
 body {
@@ -45,21 +45,41 @@ body {
     flex-direction: row; */
 }
 
-.h1 {
+.title {
     display: flex;
     justify-content: start;
+    align-items: center;
 }
 
-.h1__text {
+
+.title__text{
     margin-left: 10px;
     font-size: 28px;
 }
 
+.title__element {
+    margin-left: -4px;
+    width: 8px;
+    border-top: 40px solid #41F6D7;
+    border-radius: 5px;
+}
+
+.header__elem {
+    width: 2px;
+    border-top: 32px solid #EAEAEA;
+}
+
 .main-menu__list {
-    margin-left: -24px;
+    padding-left: 0px;
+    margin-top: 7px;
+    margin-left: 16px;
     list-style-type: none;
     display: flex;
-    overflow: hidden;
+    overflow: scroll;
+}
+
+.main-menu__list::-webkit-scrollbar {
+    width: 0;
 }
 
 .main-menu__element {       
@@ -81,13 +101,17 @@ body {
     text-decoration: none;
 }
 
+.main-menu__gradient {
+    background: linear-gradient(to left, #F8F8F8, transparent);
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+}
+
 .description-more {
-    margin-left: 16px;
-    width: 132;
-    height: 24px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 .description-more__text {
@@ -99,14 +123,22 @@ body {
 }
 
 .description {
+    display: flex;
+    flex-direction: column;
     margin-left: 16px;
     margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 .description-text__p1,
 .description-text__p2 {
     font-size: 14px;
+    line-height: 20px;
     
+}
+
+.description-text__p1 {
+    margin-top: 0px;
 }
 
 .description-text__p2 {
@@ -117,35 +149,47 @@ body {
     width: 100%;
 }
 
-/* hidden */
-.header__elem_hidden,
-.header__call, 
-.header__chat,
-.header__profile {
-    display: none;
-}
-
 .header-checkstatus__text,
 .header-repair__text {
     display: none;
 }
 
+.header__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #FF3E79;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden,
+.call,
+.chat, 
+.profile {
+    display: none;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    background-color: white;
+}
 
 @media (min-width: 768px) {
 
-.header__elem_hidden,
-.header__call, 
-.header__chat,
-.header__profile {
-    display: block;
+.hidden,
+.call, 
+.chat,
+.profile {
+    display: flex;
 }
 
 .description-text__p2 {
     display: inline-block;
 }
 
-.main-menu__element:nth-child(4), 
-.main-menu__element:nth-child(6),
 .description-text__p2_hidden {
     display: none;
 }
@@ -153,6 +197,7 @@ body {
 .content__img {
     margin-right: 25px;
     border-radius: 8px;
+    width: 50%;
 }
 
 .content {
@@ -168,19 +213,14 @@ body {
 
 @media (min-width: 1120px) {
 
-    .header__burger,
-    .header__elem_hidden,
+    .burger,
     .header__logo,
-    .header__call,
-    .header__chat,
-    .header__profile,
-    .header__elem {
+    .call,
+    .chat,
+    .profile,
+    .header__elem,
+    .main-menu__gradient {
         display: none;
-    }
-
-    .main-menu__element:nth-child(4),
-    .main-menu__element:nth-child(6){
-        display: block;
     }
 
     .description-text__p2_hidden {
@@ -191,19 +231,19 @@ body {
         margin-left: -24px;
         list-style-type: none;
         display: flex;
+        overflow: auto;
         flex-wrap: wrap;
-        overflow: hidden;
     }
 
     .header {
-        margin-top: 42px;
+        margin-top: 23px;
         background-color: #F8F8F8;
         display: flex;
         height: 88px;
         justify-content: end;
         align-items: center;
         box-sizing: border-box;
-        gap: 16px;
+        gap: 0px;
         /* padding-bottom: 10px; */
     }
 
@@ -211,6 +251,7 @@ body {
     .header-checkstatus {
         display: flex;
         align-items: center;
+        background-color: #F8F8F8;
     }
 
     .header-checkstatus__text,
@@ -220,12 +261,13 @@ body {
         font-weight: 500;
     }
     
-    .h1 {
+    .title {
         position: absolute;
-        top: 42px;
+        top: 23px;
     }
 
-    .header-checkstatus {
+    .header-checkstatus,
+    .header-repair {
         margin-right: 32px;
     }
 }
