@@ -19,19 +19,57 @@ html {
 
 .header__logo {
     margin-right: auto;
+    width: 90px;
+    height: 60px;
 }
 
 .header-checkstatus {
     margin-right: 16px;
 }
 
+.header__burger {
+    width: 16px;
+    height: 16px;
+}
+
+.header__call {
+    width: 18px;
+    height: 18px;
+}
+
+.header__chat {
+    width: 20px;
+    height: 20px;
+}
+
+.header__profile {
+    width: 20px;
+    height: 18px;
+}
+
+.header-repair__logo {
+    width: 20px;
+    height: 20px;
+}
+
+.header-checkstatus__logo {
+    width: 16px;
+    height: 20px;
+}
+
 .burger {
     margin-left: 16px;
 }
 
+#repair,
+#checkstatus {
+    font: 16px "TT Lakes"; 
+    font-weight: 500; 
+    line-height: 24px;
+}
+
 body {
     margin: 0;
-    /* width: 320px; */
     padding: 0px;
     font-family: "TT Lakes", sans-serif;
     background-color: #F8F8F8;
@@ -40,9 +78,6 @@ body {
 .main {
     margin: 0px;
     padding: 0px;
-    /* display: flex;
-    justify-content: space-between;
-    flex-direction: row; */
 }
 
 .title {
@@ -53,8 +88,12 @@ body {
 
 
 .title__text{
-    margin-left: 10px;
+    margin:0px 0px 0px 10px;
     font-size: 28px;
+}
+
+.title {
+    margin: 24px 0px;
 }
 
 .title__element {
@@ -71,7 +110,7 @@ body {
 
 .main-menu__list {
     padding-left: 0px;
-    margin-top: 7px;
+    margin-top: 0px;
     margin-left: 16px;
     list-style-type: none;
     display: flex;
@@ -80,6 +119,7 @@ body {
 
 .main-menu__list::-webkit-scrollbar {
     width: 0;
+    height: 0;
 }
 
 .main-menu__element {       
@@ -143,6 +183,11 @@ body {
     display: none;
 }
 
+.description-more__img {
+    width: 24px;
+    height: 24px;
+}
+
 .content__img {
     width: 100%;
 }
@@ -173,6 +218,10 @@ button {
     padding: 0;
     border: 0;
     background-color: white;
+}
+
+.header__icon {
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -214,6 +263,10 @@ button {
 
 .title__text {
     margin-left: 20px;
+}
+
+.title {
+    margin-bottom: 32px;
 }
 
 }
