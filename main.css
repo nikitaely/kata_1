@@ -27,38 +27,53 @@ html {
     margin-right: 16px;
 }
 
-.header__burger {
+.burger {
+    background-image: url("icons/burger.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     width: 16px;
     height: 16px;
+    margin-left: 16px;
 }
 
-.header__call {
+.call {
+    background-image: url("icons/call.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     width: 18px;
     height: 18px;
 }
 
-.header__chat {
+.chat {
+    background-image: url("icons/chat.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     width: 20px;
     height: 20px;
 }
 
-.header__profile {
+.profile {
+    background-image: url("icons/profile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     width: 20px;
     height: 18px;
 }
 
-.header-repair__logo {
-    width: 20px;
-    height: 20px;
-}
-
-.header-checkstatus__logo {
+.checkstatus {
+    background-image: url("icons/checkstatus.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     width: 16px;
     height: 20px;
 }
 
-.burger {
-    margin-left: 16px;
+.repair {
+    background-image: url("icons/repair.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 20px;
+    height: 20px;
 }
 
 #repair,
@@ -205,6 +220,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .hidden,
@@ -218,10 +234,6 @@ button {
     padding: 0;
     border: 0;
     background-color: white;
-}
-
-.header__icon {
-    cursor: pointer;
 }
 
 @media (min-width: 768px) {
